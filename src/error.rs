@@ -7,4 +7,7 @@ pub enum InfoError {
     EmptyInput,
     /// The two input slices had different lengths (`left` vs `right`).
     LengthMismatch { left: usize, right: usize },
+    /// `p` assigns positive probability to a value that `q` assigns zero probability,
+    /// making the divergence infinite.
+    UndefinedDivergence,
 }
