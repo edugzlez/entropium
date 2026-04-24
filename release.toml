@@ -1,0 +1,27 @@
+# cargo-release configuration
+# Docs: https://github.com/crate-ci/cargo-release/blob/master/docs/reference.md
+
+# Run git-cliff to update CHANGELOG before the release commit
+pre-release-hook = [
+    "git-cliff",
+    "--tag", "{{version}}",
+    "-o", "CHANGELOG.md",
+]
+
+# Stage CHANGELOG.md so it goes into the release commit
+pre-release-commit-message = "bump: {{prev_version}} -> {{version}}"
+
+# Files where the version string will also be replaced
+# (add README.md here if you reference the version there)
+pre-release-replacements = []
+
+# Don't push or publish automatically — you decide when
+push = false
+publish = false
+
+# Tag format
+tag-name = "v{{version}}"
+tag-message = "Release v{{version}}"
+
+# Only allow releases from these branches
+allow-branch = ["main", "master"]
