@@ -2,11 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - 2026-04-24
+## [0.2.0] - 2026-04-24
+
+### Documentation
+
+- Add license and readme ([`54580d2`])
+- Add vitepress docs ([`d971587`])
 
 ### Features
 
-- Shannon entropy H(X)
-- Joint entropy H(X,Y)
-- Conditional entropy H(X|Y)
-- Mutual information I(X;Y)
+- Add KL divergence, Jensen-Shannon divergence and cross-entropy ([`edf63fc`])
+
+
