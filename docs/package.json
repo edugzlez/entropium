@@ -1,0 +1,13 @@
+{
+  "name": "entropium-docs",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.0",
+    "markdown-it-mathjax3": "^4.3.2"
+  }
+}
